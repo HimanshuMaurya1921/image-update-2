@@ -1,0 +1,27 @@
+apiVersion: argocd-image-updater.argoproj.io/v1alpha1
+kind: ImageUpdater
+metadata:
+  name: node-app-updater
+  namespace: argocd
+spec:
+
+  applicationRefs:
+    - namePattern: "node-app"
+      images:
+        - alias: node-app
+          imageName: himanshumaurya1920/node-app-2
+
+          commonUpdateSettings:
+            updateStrategy: semver
+            allowTags: "regexp:^[0-9]+\\.[0-9]+\\.[0-9]+$"
+
+          manifestTargets:
+            kustomize:
+              name: himanshumaurya1920/node-app-2
+
+  writeBackConfig:
+    method: git
+    gitConfig:
+      repository: "https://github.com/HimanshuMaurya1921/image-update-2"
+      writeBackTarget: kustomization
+      branch: main
