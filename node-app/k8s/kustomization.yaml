@@ -8,4 +8,4 @@ images:
     newTag: 1.0.0
   - name: docker.io/himanshumaurya1920/node-app-2
     newName: docker.io/himanshumaurya1920/node-app-2
-    newTag: 1.0.1
+    newTag: 1.0.2
