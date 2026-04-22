@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: himanshumaurya1920/node-app-2:1.0.0
+        image: docker.io/himanshumaurya1920/node-app-2:1.0.0
         ports:
         - containerPort: 3000

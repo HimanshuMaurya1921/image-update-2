@@ -9,7 +9,7 @@ spec:
     - namePattern: "node-app"
       images:
         - alias: node-app
-          imageName: himanshumaurya1920/node-app-2
+          imageName: docker.io/himanshumaurya1920/node-app-2
 
           commonUpdateSettings:
             updateStrategy: semver
@@ -17,7 +17,7 @@ spec:
 
           manifestTargets:
             kustomize:
-              name: himanshumaurya1920/node-app-2
+              name: docker.io/himanshumaurya1920/node-app-2
 
   writeBackConfig:
     method: git

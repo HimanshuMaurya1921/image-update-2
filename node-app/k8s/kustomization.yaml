@@ -4,7 +4,7 @@ resources:
   - deployment.yaml
   - svc.yaml
 images:
-  - name: himanshumaurya1920/node-app-2
+  - name: hdocker.io/imanshumaurya1920/node-app-2
     newTag: 1.0.0
   - name: docker.io/himanshumaurya1920/node-app-2
     newName: docker.io/himanshumaurya1920/node-app-2

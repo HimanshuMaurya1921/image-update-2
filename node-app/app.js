@@ -3,7 +3,7 @@ const PORT = process.env.PORT || 3000;
 
 http.createServer((req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/plain' });
-  res.end('Hello from Node App v1.0.0\n');
+  res.end('Hello from Node App v1.0.1\n');
 }).listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
